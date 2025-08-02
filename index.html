@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>                     
+  <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="logo">AH</div>
+         <div class="navlinks">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hamburger Navigation Bar -->
+     <nav class="hamburger-nav">
+      <div class="logo2">AH</div>
+      <!-- Dark Toggle on Mobile Menu -->
+      <button id="toggle-dark" class="dark-toggle"> 
+      <i class="fa-solid fa-moon"></i>
+            </button>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <div class="menu-links">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+     
+<!-- Hero Section -->
+  <section id="Hero" class="hero">
+  <div class="intro"> 
+  <h1>Welcome! I'm Alicia Harper</h1>
+  <h4>App Development Student | Transitioning IT Professional</h4>
+  <a href="#projects" class="button">View My Work</a>
+  </div>
+  </section>
+
+    <!-- About Section: Skills, Education, Interests -->
+    <section id="About" class="About">
+           <h2>Allow Me To Introduce Myself</h2>
+        <img src="images/LinkedInpic.jpg" alt="My picture"> 
+        <div class="about-me">
+        <p>I'm an aspiring IT professional and app developer with a background in customer service, teamwork, and problem-solving. Learning new skills is part of my DNA.</p>
+        </div>
+        <div class="content">
+        <h3>What You Should Know</h3>
+        <p>Developing Skills In:</p>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Java Script</span>
+        <span>Linux</span>
+        </div>    
+    </section>
+
+    <!-- Projects -->
+          <section id="Projects" class="projects">
+      <div class="container">
+        <h2>Future Projects</h2>
+        <div class = "project-grid">
+        <div class="future-projects">
+        <img src="images/e-commerce.jpg" alt="E-Commerce">
+        <h3>E-Commerce App</h3>
+        <p>Online Store using a variety of platforms</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+      <div class="future-projects">
+        <img src="images/bookstore2.jpg" alt="Book Store">
+        <h3>Book Store App</h3>
+        <p>Online Book Store using a variety of platforms</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+      <div class="future-projects">
+        <img src="images/weather.jpg" alt="Weather App">
+        <h3>Weather Application</h3>
+        <p>Weather App using a variety of platforms</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+      </div>
+      </div>
+     </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="Contact">
+       <h2>Get In Touch</h2>
+    <form class="contact-form"> 
+       <div class="form-group">
+        <input type="text" name="fullname" placeholder="Name" maxlength="30">
+        </div>
+
+        <div class="form-group">
+        <input type="email" name="email" placeholder="Email" maxlength="30">
+         </div>
+
+       <div class="form-group">
+        <input type="tel" id="phone" placeholder="Phone">
+       </div> 
+        
+       <div class="form-group">
+       <textarea name="message" placeholder="Send a message"></textarea>
+        </div>
+        <button type="Submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container-footer">
+      <p> 2025 My Portfolio. All rights reserved.</p>  
+     <div class="socials">
+        <a href="#">
+        <i class="fa-brands fa-github fa-1xl"></i> 
+        </a>
+        <a href="#">
+         <i class="fa-brands fa-linkedin"></i>   
+        </a>
+     </div>   
+     </div>
+  </footer>
+  <script src="app.js"></script>
+  </body>
+</html>
